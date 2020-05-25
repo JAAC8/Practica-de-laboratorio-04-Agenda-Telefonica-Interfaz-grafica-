@@ -163,8 +163,8 @@ public class MenuUsuario {
         Button botonA = new Button("Agregar Contacto");
         Button botonB = new Button("Buscar Contacto");
         Button botonAc = new Button("Actualizar Contacto");
-        Button botonE = new Button("Eliminar COntacto");
-        Button botonL = new Button("Listar Contacto");
+        Button botonE = new Button("Eliminar Contacto");
+        Button botonL = new Button("Listar Contactos");
         Button botonS = new Button("Salir");
         
         Label mensajeMU = new Label("MENÚ DE USUARIO");
@@ -193,13 +193,13 @@ public class MenuUsuario {
         
         //----------------------------------------------------------------------
         
-        
+        /*
         //AGREGAR CONTACTO
         Frame agregarContacto = new Frame();
         agregarContacto.setSize(250, 400);
         agregarContacto.setLocation(640, 250);
         
-        GridLayout gridLayout1 = new GridLayout(12, 1);
+        GridLayout gridLayout1 = new GridLayout(13, 1);
         Panel panelPrincipalAC = new Panel(gridLayout1);
                 
         FlowLayout flowLayoutAC = new FlowLayout(FlowLayout.LEFT);
@@ -210,12 +210,16 @@ public class MenuUsuario {
         Panel pOperadora = new Panel(flowLayoutAC);
         Panel pNumero = new Panel(flowLayoutAC);
         
+        Panel agregar = new Panel(new FlowLayout(FlowLayout.CENTER));
+        
         Panel pTCodigo = new Panel(flowLayoutAC);
         Panel pTNombre = new Panel(flowLayoutAC);
         Panel pTApellido = new Panel(flowLayoutAC);
         Panel pTTipo = new Panel(flowLayoutAC);
         Panel pTOperadora = new Panel(flowLayoutAC);
         Panel pTNumero = new Panel(flowLayoutAC);
+        
+        Button botonAgregar = new Button("Agregar");
         
         Label labelCodigo = new Label("Código:");
         Label labelNombre = new Label("Nombre:");
@@ -245,6 +249,8 @@ public class MenuUsuario {
         pTNumero.add(labelNumero);
         pNumero.add(boxNumero);
         
+        agregar.add(botonAgregar);
+        
         panelPrincipalAC.add( pTCodigo);
         panelPrincipalAC.add(pCodigo);
         panelPrincipalAC.add(pTNombre);
@@ -257,9 +263,200 @@ public class MenuUsuario {
         panelPrincipalAC.add(pOperadora);
         panelPrincipalAC.add(pTNumero);
         panelPrincipalAC.add(pNumero);
-        
+        panelPrincipalAC.add(agregar);
         
         agregarContacto.add(panelPrincipalAC);
         agregarContacto.setVisible(true);
+        
+        */
+        
+        
+        //----------------------------------------------------------------------
+        
+        
+        /*
+        //BUSCAR CONTACTO
+        Frame buscarContacto = new Frame("Buscar Contacto");
+        buscarContacto.setSize(400, 150);
+        buscarContacto.setLocation(550, 300);        
+        
+        GridLayout gridLayout = new GridLayout(3, 1);
+        Panel panelPrincipal = new Panel(gridLayout);
+        
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER);        
+        Panel tCodigo = new Panel(flowLayout);        
+        Panel pBotonBuscar = new Panel(flowLayout); 
+        
+        Label lCodigo = new Label("Código: ");
+        TextField boxCodigo = new TextField("Introduza el codigo aquí...");
+        Button botonBuscar = new Button("Buscar");
+        
+        tCodigo.add(lCodigo);
+        tCodigo.add(boxCodigo);
+        pBotonBuscar.add(botonBuscar);
+        
+        panelPrincipal.add(tCodigo);        
+        panelPrincipal.add(pBotonBuscar);
+        
+        buscarContacto.add(panelPrincipal);
+        buscarContacto.setVisible(true);         
+        */
+        
+        
+        //----------------------------------------------------------------------
+        
+        
+        /*
+        //ACTUALIZAR CONTACTO
+        Frame actualizarContacto = new Frame("Actualizar Contacto");
+        actualizarContacto.setSize(400, 550);
+        actualizarContacto.setLocation(550, 150);
+        
+        GridLayout gridLayout = new GridLayout(15, 1);
+        Panel panelPrincipal = new Panel(gridLayout);
+        
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.LEFT);
+        //PANELES DE LABEL
+        Panel tCodigo = new Panel();
+        Panel vacio = new Panel();
+        Panel tMensaje = new Panel();
+        Panel tNombre = new Panel(flowLayout);
+        Panel tApellido = new Panel(flowLayout);
+        Panel tTipo = new Panel(flowLayout);       
+        Panel tOperadora = new Panel(flowLayout);
+        Panel tNumero = new Panel(flowLayout);
+        
+        //PANELES TEXTFIELDS
+        Panel bCodigo = new Panel();
+        Panel bNombre = new Panel(flowLayout);
+        Panel bApellido = new Panel(flowLayout);
+        Panel bTipo = new Panel(flowLayout);       
+        Panel bOperadora = new Panel(flowLayout);
+        Panel bNumero = new Panel(flowLayout);
+        
+        Panel actulizaBooton = new Panel(new FlowLayout(FlowLayout.CENTER));
+        
+        //Label
+        Label lCodigo = new Label("Código del Contacto");
+        Label lMensaje = new Label("Modifique los siguientes Campos");
+        Label lNombre = new Label("Nombre:");
+        Label lApellido = new Label("Apellido");
+        Label lTipo = new Label("Tipo:");
+        Label lOperadora = new Label("Operadora:");
+        Label lNumero = new Label("Número Telefónico:");
+        
+        //TextField
+        TextField boxCodigo = new TextField("Introduzaca el texto aquí...");
+        TextField boxNombre = new TextField("Introduzaca el texto aquí...");
+        TextField boxApellido = new TextField("Introduzaca el texto aquí...");
+        TextField boxTipo = new TextField("Introduzaca el texto aquí...");
+        TextField boxOperadora = new TextField("Introduzaca el texto aquí...");
+        TextField boxNumero  = new TextField("Introduzaca el texto aquí...");
+        
+        
+        tCodigo.add(lCodigo);
+        tMensaje.add(lMensaje);
+        tNombre.add(lNombre);
+        tApellido.add(lApellido);
+        tTipo.add(lTipo);
+        tOperadora.add(lOperadora);
+        tNumero.add(lNumero);
+        
+        bCodigo.add(boxCodigo);
+        bNombre.add(boxNombre);
+        bApellido.add(boxApellido);
+        bTipo.add(boxTipo);
+        bOperadora.add(boxOperadora);
+        bNumero.add(boxNumero);
+        
+        Button actualizar = new Button("Actualizar");
+        actulizaBooton.add(actualizar);
+        
+        panelPrincipal.add(tCodigo);
+        panelPrincipal.add(bCodigo);
+        panelPrincipal.add(vacio);
+        panelPrincipal.add(tMensaje);
+        panelPrincipal.add(tNombre);
+        panelPrincipal.add(bNombre);
+        panelPrincipal.add(tApellido);
+        panelPrincipal.add(bApellido);
+        panelPrincipal.add(tTipo);
+        panelPrincipal.add(bTipo);
+        panelPrincipal.add(tOperadora);
+        panelPrincipal.add(bOperadora);
+        panelPrincipal.add(tNumero);
+        panelPrincipal.add(bNumero);
+        panelPrincipal.add(actulizaBooton);
+        
+        actualizarContacto.add(panelPrincipal);
+        actualizarContacto.setVisible(true);
+        */
+        
+        
+        //----------------------------------------------------------------------
+        
+        
+        /*
+        //BORRA CONTACTO
+        Frame eliminarContacto = new Frame("Eliminar Contacto");
+        eliminarContacto.setSize(400, 150);
+        eliminarContacto.setLocation(550, 300);        
+        
+        GridLayout gridLayout = new GridLayout(3, 1);
+        Panel panelPrincipal = new Panel(gridLayout);
+        
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER);        
+        Panel tCodigo = new Panel(flowLayout);        
+        Panel pBotonBuscar = new Panel(flowLayout); 
+        
+        Label lCodigo = new Label("Código: ");
+        TextField boxCodigo = new TextField("Introduza el codigo aquí...");
+        Button botonEliminar = new Button("Eliminar");
+        
+        tCodigo.add(lCodigo);
+        tCodigo.add(boxCodigo);
+        pBotonBuscar.add(botonEliminar);
+        
+        panelPrincipal.add(tCodigo);        
+        panelPrincipal.add(pBotonBuscar);
+        
+        eliminarContacto.add(panelPrincipal);
+        eliminarContacto.setVisible(true);  
+        */
+        
+        
+        
+        //----------------------------------------------------------------------
+        
+        
+        /*
+        //Listar Contactos
+        Frame listaContactos = new Frame("Listar Contactos");
+        listaContactos.setSize(300, 300);
+        listaContactos.setLocation(600, 300);
+        
+        GridLayout gridLayout = new GridLayout(3, 1);
+        Panel panelPrincipal = new Panel(gridLayout);
+        
+        Label categoria = new Label("LISTA DE CONTACTOS");
+        Label mensaje = new Label("Tus Contactos son:");
+        Label lista = new Label("Aquí aparecerán tus contactos...");
+        
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER);
+        Panel cat = new Panel(flowLayout);
+        Panel men = new Panel(new FlowLayout(FlowLayout.LEFT));
+        Panel list = new Panel(flowLayout);
+        
+        cat.add(categoria);
+        men.add(mensaje);
+        list.add(lista);
+        
+        panelPrincipal.add(cat);
+        panelPrincipal.add(men);
+        panelPrincipal.add(list);
+        
+        listaContactos.add(panelPrincipal);
+        listaContactos.setVisible(true);
+        */
     }
 }
