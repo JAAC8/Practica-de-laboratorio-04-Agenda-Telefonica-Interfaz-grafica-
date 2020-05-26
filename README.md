@@ -70,7 +70,7 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
 
 # Resultados Obtenidos
 
-
+![resultado](https://user-images.githubusercontent.com/64880801/82949132-ad3b9600-9f68-11ea-886a-baf208414310.png)
 
 
 # Conclusiones
