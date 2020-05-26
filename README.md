@@ -5,11 +5,13 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
 
 
 # Herramientas
-
+- IDE: NeatBEans 11.3
 
 # Descripción del desarrollo de la Práctica
 
 - Al tratarse de una sola ventana su código se ha programado en el metodo main.
+
+
    1.
    
     
