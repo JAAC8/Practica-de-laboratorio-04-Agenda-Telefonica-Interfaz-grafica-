@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package GUI;
+package ec.edu.ups.gui;
 
 import java.awt.Frame;
 import java.awt.Label;
