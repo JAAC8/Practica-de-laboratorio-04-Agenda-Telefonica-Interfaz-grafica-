@@ -68,4 +68,8 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
         }
 
 
+# Conclusiones
+- El conocimiento sobre la construcción de ventanas para la implementación de la  Intefáz Gráfica de Usuario (GUI) en las aplicaciones, resulta, aunque por el momento insipiente; una herramienta útil y un avance hacia el mejoramiento de la Experiencia de Usuario en el area gráfica. 
 
+# Recomendaciones
+- Conocer como aplicar las propiedades de la programación orientada a objetos para la generación de ventanas en multiples clases y paquetes sin comprometer la estabilidad del algoritmo.
