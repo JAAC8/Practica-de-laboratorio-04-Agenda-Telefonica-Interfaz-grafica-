@@ -4,16 +4,16 @@
 Este programa permite generar ventanas empleando los conceptos básicos de Intefáz Gráfica de Usuario (GUI), construyendo las mismas con los elementos del menú de usuario de la aplicación Agenda Telefónica.
 
 
-- Requerimmientos
+# Herramientas
 
 
-- Proceso de contrucción de ventana
+# Descripción del desarrollo de la Práctica
 
-
-
-- Al tratarse de una sola ventana su código se ha programado en el metodo main:
+- Al tratarse de una sola ventana su código se ha programado en el metodo main.
+   1.
+   
     
-    public static void main(String[] args){
+        public static void main(String[] args){
         
         
         Frame menuUsuario = new Frame();
@@ -63,7 +63,7 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
         
         menuUsuario.add(panelPrincipalMU);
         menuUsuario.setVisible(true);
-    }
+        }
 }
 
 
