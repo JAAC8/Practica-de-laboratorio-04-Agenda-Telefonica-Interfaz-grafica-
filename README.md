@@ -7,7 +7,7 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
 - Requerimmientos
 
 
-- Proceso de generación de ventana
+- Proceso de contrucción de ventana
 
 
 
