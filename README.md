@@ -66,6 +66,6 @@ Este programa permite generar ventanas empleando los conceptos básicos de Intef
         menuUsuario.add(panelPrincipalMU);
         menuUsuario.setVisible(true);
         }
-}
+
 
 
