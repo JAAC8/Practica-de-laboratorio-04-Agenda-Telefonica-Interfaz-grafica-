@@ -397,7 +397,7 @@ public class MenuUsuario {
         
         
         /*
-        //BORRA CONTACTO
+        //BORRAR CONTACTO
         Frame eliminarContacto = new Frame("Eliminar Contacto");
         eliminarContacto.setSize(400, 150);
         eliminarContacto.setLocation(550, 300);        
@@ -457,6 +457,50 @@ public class MenuUsuario {
         
         listaContactos.add(panelPrincipal);
         listaContactos.setVisible(true);
+        */
+        
+        
+        //----------------------------------------------------------------------
+        
+        
+        /*
+        //INICIAR SECIÓN
+        Frame inicioSesion = new Frame("Inicio de Sesión");
+        inicioSesion.setSize(300, 400);
+        inicioSesion.setLocation(600, 300);
+        
+        GridLayout gridLayout = new GridLayout(5, 1);
+        Panel panelPrincipal = new Panel(gridLayout);
+        
+        Label correo = new Label("Correo electrónico:");
+        Label contrasena = new Label("Contraseña:");
+        
+        FlowLayout flowLayout = new FlowLayout(FlowLayout.CENTER);
+        Panel pLCorreo = new Panel(flowLayout);
+        Panel pTCorreo = new Panel(flowLayout);
+        Panel pLContrasena = new Panel(flowLayout);
+        Panel pTContrasena = new Panel(flowLayout);
+        Panel pBRegistrar = new Panel(flowLayout);
+        
+        TextField boxCorreo = new TextField("Introduzca aquí el correo...");
+        TextField boxContraseña = new TextField("Introduzca aquí su contraseña");
+        
+        Button registro = new Button("Iniciar Sesión");
+        
+        pLCorreo.add(correo);
+        pTCorreo.add(boxCorreo);
+        pLContrasena.add(contrasena);
+        pTContrasena.add(boxContraseña);
+        pBRegistrar.add(registro);
+        
+        panelPrincipal.add(pLCorreo);
+        panelPrincipal.add(pTCorreo);
+        panelPrincipal.add(pLContrasena);
+        panelPrincipal.add(pTContrasena);
+        panelPrincipal.add(pBRegistrar);
+        
+        inicioSesion.add(panelPrincipal);
+        inicioSesion.setVisible(true);
         */
     }
 }
